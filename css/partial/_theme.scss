@@ -1,0 +1,11 @@
+// _theme.scss
+body {
+    font-family: $font-family;
+    color: $text-color;
+    background-color: #fff;
+    &.dark {
+      background-color: #333;
+      color: #f4f4f4;
+    }
+  }
+  

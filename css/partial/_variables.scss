@@ -1,0 +1,44 @@
+// _variables.scss
+$font-family: 'Work Sans', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// style.scss 
+$border-radius: 15px;
+
+
+h1 {
+  font-weight: $font-weight-bold;
+}
+
+p.light-text {
+  font-weight: $font-weight-regular;
+}
+
+
+  
+// Font Sizes
+$font-size-small: 12px;
+$font-size-base: 16px;
+$font-size-medium: 18px;
+$font-size-medium-24: 24px;
+$font-size-medium-30: 30px;
+$font-size-large: 50px;  
+
+
+// Colors (Primary, Secondary, etc.)
+$primary-color: #6a027f;
+$decent-primary:#EBBDFF;  
+$decent-primary-bg:#F4D9FF;
+$secondary-color: #0cac8e;
+$background-color: #ffffff;
+$text-color: #141115;
+ 
+ 
+
+ 
+ 
+
+ 

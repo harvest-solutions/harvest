@@ -1,0 +1,120 @@
+
+.footer{
+    padding: 50px 0 0;
+    color: $background-color;
+    background-image: url('../img/world-img.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: top; 
+}
+.footer-wrap{
+    padding-bottom: 80px;
+}
+.social-media{
+    .item{
+        display: flex;
+    }
+    .social-link{ 
+        margin-right: 15px;  
+        img{
+            display: block;
+            transition: transform 0.6s ease;  
+            transform-style: preserve-3d;
+        }
+        &:hover{
+            img{
+                transform: rotateY(360deg); 
+            }
+        }
+      
+    }
+ }
+
+ .footer-title{ 
+    margin-bottom: 20px;
+ }
+
+ .footer-links{
+    list-style: none;
+    padding: 0; 
+    .item{
+        margin-bottom: 10px;
+    }
+    .link-item{
+        color: $background-color;
+        text-decoration: none;
+        padding: 4px 0;
+        display: inline-block;
+        &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $background-color;
+            transition: width .3s;
+
+        }
+        &:hover {
+            color: $background-color;
+            &::after{
+                width: 100%;
+            }
+        }
+        &::before{
+            content: '';
+            background-image: url('../img/icon/double-bullets.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+        }
+        
+    }
+ }
+
+
+ .footer-address-list{
+    list-style: none;
+    margin: 0;
+    padding:0 ;
+    .item{
+        margin-bottom: 18px;
+        .link{
+            color: $background-color; 
+            text-decoration: none;
+            padding: 2px 0;
+            position: relative;
+            padding-left: 40px;
+            display: inline-block;
+            .icon{
+                position: absolute;
+                left: 0;
+                top: 2px;
+                z-index: 10;
+            }
+        }
+    }
+ }
+
+ @include respond-min(xlarge) {
+    .footer{
+        background-size: 55%; 
+    }
+  }
+
+  @include respond-max(medium) {
+    
+    .footer{
+        padding: 32px 0 0;
+        font-size: 16px;
+    }
+    .footer-wrap{
+        padding-bottom: 50px;
+        
+    }
+  }
+
+
+ 
+  

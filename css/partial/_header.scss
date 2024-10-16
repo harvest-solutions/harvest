@@ -1,0 +1,215 @@
+// Header scss
+$navbar-font-size:1rem;
+
+
+.open-sidebar{
+    overflow: hidden;   
+}
+.header{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.navbar {
+    background-color: $background-color;
+    .nav-item{
+        &:last-child{
+            .nav-link{
+                padding-right: 0;
+            }
+        }
+    }
+    .nav-link {
+        color: $text-color;
+        font-size: $navbar-font-size; 
+        font-weight: 500;
+       
+        &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $primary-color;
+            transition: width .3s;
+
+        }
+        &:hover {
+            color: $primary-color;
+            &::after{
+                width: 100%;
+            }
+        }
+        &.active-link{
+            color: $primary-color;
+            &::after{
+                width: 100%;
+            }
+        }
+    } 
+}
+
+// navbar toggler css
+.navbar-togglers {
+	border: none;
+	background: none;
+	outline: none;
+}
+.menu-toggle {
+	width: 26px;
+	height: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&.openNav {
+		.hamburger {
+			background-color: transparent;
+			&::before {
+        transform: rotate(45deg) translate(0px, 0px);
+        border-radius: 7px;
+        width: 25px;
+			}
+			&::after { 
+        transform: rotate(-45deg) translate(1px, -3px);
+        border-radius: 7px;
+        width: 25px;
+			}
+		}
+	}
+}
+.hamburger, .hamburger::before, .hamburger::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	display: block;
+	transition: all 0.3s ease;
+	position: relative;
+  
+}
+.hamburger {
+	&::before {
+		transform: translateY(-8px);
+    margin-top: -1px;
+	}
+	&::after {
+		transform: translateY(8px);
+	}
+}
+.navbar-collapse {
+	display: none;
+	&.openNav {
+		display: block;
+	}
+}
+
+
+
+
+.navbar-togglers{
+    display: none;
+}
+@include respond-min(large) { 
+
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link{
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+
+ }
+
+
+ 
+ @include respond-max(large) { 
+    .navbar-togglers{
+        display: block;
+    }
+    .navbar-wrapper{
+        background: #fff;
+        height: 100vh;
+        left: -320px; /* Start with the sidebar completely off-screen */
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+        width: 320px;
+        will-change: transform;
+        z-index: 9999;
+        padding: 15px;
+      
+        &.openNav{
+            box-shadow: 0 8px 8px 0 rgba(50, 50, 50, .4);
+            -webkit-transform: translate(0);
+            transform: translate(0); 
+            left: 0; 
+           
+        }
+    }
+    .navbar {
+        .nav-link{
+            display: inline-block;
+        }
+    }
+
+ }
+
+
+ @include respond-max(small) {
+    .navbar-wrapper {
+        left: -265px;
+        width: 265px;
+    }
+ }
+ 
+
+
+
+
+
+/* Sticky Header CSS */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;  
+  }
+  
+  .navbar {
+    padding: 10px 0; 
+  }
+  
+ 
+  .header.scrolled { 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+
+ // Typing word
+
+ 
+  #typed-word { 
+    color: #fff;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 1px 1px 2px #ffffff, 0 0 1em #ffffff, 0 0 0.2em #6a027f;
+ 
+  }
+  
+  .blinking-cursor {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: #fff; /* Same color as the word */
+    }
+  }
+  

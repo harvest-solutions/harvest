@@ -1,0 +1,113 @@
+// _breakpoints.scss - SCSS partial for breakpoints
+
+// Breakpoint variables
+$small-screen: 480px;   // Small devices (phones)
+$medium-screen: 768px;  // Medium devices (tablets)
+$large-screen: 992px;  // Large devices (desktops)
+$xlarge-screen: 1200px; // Extra large devices (larger desktops)
+$xxlarge-screen: 1440px; // Very large devices (extra large desktops)
+
+// max media
+$small-screen: 479px;   // Small devices (phones)
+$medium-screen: 767px;  // Medium devices (tablets)
+$large-screen: 991px;  // Large devices (desktops)
+$xlarge-screen: 1199px; // Extra large devices (larger desktops)
+$xxlarge-screen: 1339px; // Very large devices (extra large desktops)
+
+ 
+
+// Media query mixins
+@mixin respond-min($breakpoint) {
+    @if $breakpoint == small {
+      @media (min-width: $small-screen) { @content; }
+    }
+    @else if $breakpoint == medium {
+      @media (min-width: $medium-screen) { @content; }
+    }
+    @else if $breakpoint == large {
+      @media (min-width: $large-screen) { @content; }
+    }
+    @else if $breakpoint == xlarge {
+      @media (min-width: $xlarge-screen) { @content; }
+    }
+    @else if $breakpoint == xxlarge {
+      @media (min-width: $xxlarge-screen) { @content; }
+    } 
+  }
+
+  @mixin respond-max($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: $small-screen) { @content; }
+    }
+    @else if $breakpoint == medium {
+      @media (max-width: $medium-screen) { @content; }
+    }
+    @else if $breakpoint == large {
+      @media (max-width: $large-screen) { @content; }
+    }
+    @else if $breakpoint == xlarge {
+      @media (max-width: $xlarge-screen) { @content; }
+    }
+    @else if $breakpoint == xxlarge {
+      @media (max-width: $xxlarge-screen) { @content; }
+    }
+
+    
+  }
+
+
+  .heading-main {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    color: $primary-color;
+    font-weight: 700;
+  
+    @include respond-max(large) {
+      font-size: 38px;
+      line-height: 40px;
+  
+    }
+  
+    @include respond-max(medium) {
+      font-size: 32px;
+      line-height: 35px;
+  
+    }
+    @include respond-max(small) {
+      font-size: 28px;
+      line-height: 30px;
+  
+    }
+  }
+
+
+
+   
+// Example usage of media queries in other SCSS files:
+
+  // Example usage in styles
+// .container {
+//     width: 100%;
+    
+//     // Styles for medium screens and up
+//     @include respond-min(medium) {
+//       width: 80%;
+//     }
+  
+//     // Styles for large screens and up
+//     @include respond-min(large) {
+//       width: 75%;
+//     }
+  
+//     // Styles for extra large screens and up
+//     @include respond-min(xlarge) {
+//       width: 70%;
+//     }
+  
+//     // Styles for very large screens and up
+//     @include respond-min(xxlarge) {
+//       width: 65%;
+//     }
+//   }
+

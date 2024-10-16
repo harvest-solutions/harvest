@@ -1,0 +1,100 @@
+// _base.scss
+
+$primary-color: #6a027f;
+ 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Use different weights for specific elements
+
+h1 {
+  font-weight: 700; // Bold
+}
+
+h2 {
+
+  font-weight: 600; // SemiBold
+}
+
+p.light-text {
+  font-weight: 300; // Light
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+} 
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30{
+  font-size: 30px;
+}
+
+
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+// color palats
+
+
+
+/* Basic styling */
+
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 20px; 
+}
+
+.fs-2{
+  font-weight: 600;
+}
+
+

@@ -1,0 +1,62 @@
+ // _buttons.scss
+
+
+ .button-primary {
+  @include button-style($primary-color);
+  height: 50px;
+  
+}
+
+.button--secondary {
+  @include button-style($secondary-color);
+}
+
+
+.btn-arrow {
+  position: relative;
+  padding-right: 56px; /* Adjust based on your button's size */
+  
+  &::after {
+    content: '';
+    position: absolute;
+    right: 20px; /* Adjust based on your button's size */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none"><path d="M24.2071 8.70711C24.5976 8.31658 24.5976 7.68342 24.2071 7.29289L17.8431 0.928932C17.4526 0.538408 16.8195 0.538408 16.4289 0.928932C16.0384 1.31946 16.0384 1.95262 16.4289 2.34315L22.0858 8L16.4289 13.6569C16.0384 14.0474 16.0384 14.6805 16.4289 15.0711C16.8195 15.4616 17.4526 15.4616 17.8431 15.0711L24.2071 8.70711ZM0.5 9H23.5V7H0.5V9Z" fill="white"/></svg>') no-repeat center;
+    background-size: contain;
+  }
+}
+
+a.btn-arrow{
+  text-decoration: none;
+  display: inline-block;
+  &:hover{
+    color: #fff;
+  }
+}
+
+
+.btn-white{
+  border-radius: 200px;
+  height: 50px; 
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 600;
+  &:hover{
+    color: $primary-color;
+    svg{
+      fill: $primary-color;
+    }
+  }
+  @include respond-max(medium) {
+    
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}
+
+ 
