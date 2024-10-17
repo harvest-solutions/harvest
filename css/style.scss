@@ -145,7 +145,7 @@ body {
     margin-bottom: 0;
   }
 
-  h4 {
+  h4 ,h3{
     font-size: $font-size-medium-30;
     font-weight: 600;
   }
@@ -252,9 +252,8 @@ p.bullets {
 
 // Our team section start  
 .team-wrapper {
-  overflow: hidden;
-}
-
+  overflow: hidden; 
+} 
 .team-section {
   position: relative;
   width: 700px;
