@@ -25,6 +25,7 @@ body {
   color: $text-color;
   padding: 0;
   margin: 0;
+  font-display: swap;
 }
 
 
@@ -80,7 +81,7 @@ body {
 }
 
 .home-banner {
-  background-image: url('../img/banner-image.png');
+  background-image: url('../img/banner-image.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,10 +250,7 @@ p.bullets {
 // how it work section end
 
 
-// Our team section start 
-
-
-
+// Our team section start  
 .team-wrapper {
   overflow: hidden;
 }
@@ -391,6 +389,15 @@ p.bullets {
 
 /// Testimonial section end
 
+
+
+.partner-section{
+  .video-section-col{
+    @include respond-min(large) {
+      padding-bottom: 67%;
+    }
+  }
+}
 
 
 // partner section css start

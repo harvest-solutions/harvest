@@ -1571,7 +1571,7 @@ body {
 }
 
 .home-banner {
-  background-image: url("../img/banner-image.png");
+  background-image: url("../img/banner-image.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1834,6 +1834,12 @@ p.bullets::before {
   height: 100%;
   width: 100%;
   box-shadow: 0 2px 6px 1px rgb(235, 189, 255);
+}
+
+@media (min-width: 991px) {
+  .partner-section .video-section-col {
+    padding-bottom: 67%;
+  }
 }
 
 .brand-items {
