@@ -161,8 +161,17 @@ $navbar-font-size:1rem;
         left: -265px;
         width: 265px;
     }
- }
- 
+    .banner-content{
+        h1{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .section.home-banner {
+        padding:36px 0; 
+    }
+
+ } 
 
 
 

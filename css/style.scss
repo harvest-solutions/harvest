@@ -139,14 +139,13 @@ body {
   background-color: $background-color;
   margin-bottom: 20px;
   position: relative;
-  cursor: pointer;
-
+  cursor: pointer; 
   &:last-child {
     margin-bottom: 0;
   }
 
   h4 ,h3{
-    font-size: $font-size-medium-30;
+    font-size:  26px;
     font-weight: 600;
   }
 
@@ -706,7 +705,7 @@ p.bullets {
     height: auto;
     justify-content: center;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     padding: 0 5px;
     background-color: transparent;
     margin-bottom: 0;
@@ -763,6 +762,10 @@ p.bullets {
     border: 1px solid #EBBDFF;
 }
 
+
+.copy-right{
+  font-size: 12px;
+}
 
 }
 

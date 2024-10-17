@@ -45,6 +45,8 @@
         text-decoration: none;
         padding: 4px 0;
         display: inline-block;
+        position: relative;
+        padding-left: 22px;
         &::after{
             content: '';
             display: block;
@@ -68,6 +70,10 @@
             width: 14px;
             height: 14px;
             display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 11px;
+            z-index: 12;
         }
         
     }
@@ -113,8 +119,12 @@
         padding-bottom: 50px;
         
     }
+    .footer-links {
+        .link-item::before{
+            top: 9px;
+        }
+    }
   }
 
 
- 
   
