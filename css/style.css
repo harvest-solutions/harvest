@@ -2023,7 +2023,7 @@ p.bullets::before {
     gap: 20px;
     flex-direction: column;
   }
-  .tab-card h4 {
+  .tab-card h3, .tab-card h4 {
     font-size: 22px;
   }
   .tab-card.active::before {
