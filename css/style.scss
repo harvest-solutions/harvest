@@ -27,7 +27,20 @@ body {
   margin: 0;
   font-display: swap;
 }
+ .open-sidebar {
+  &::before{
+    background: rgba(0, 0, 0, .5);
+    content: "";
+    display: block;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
+  }
+}
 
 .text-color {
   color: $text-color;

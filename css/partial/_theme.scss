@@ -1,4 +1,8 @@
+
 // _theme.scss
+html{
+  scroll-behavior: smooth;
+}
 body {
     font-family: $font-family;
     color: $text-color;
