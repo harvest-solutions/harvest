@@ -553,6 +553,13 @@ a.btn-arrow:hover {
   .footer {
     background-size: 55%;
   }
+  .contact-grp-img .man-laptop {
+    max-width: 55%;
+    margin-bottom: 20px;
+  }
+  .contact-grp-img .keyboard-img {
+    max-width: 60%;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -1882,6 +1889,7 @@ p.bullets::before {
   padding: 26px;
   border-radius: 30px;
   box-shadow: 0px 4px 10px 2px rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 
 .contact-grp-img img {

@@ -107,6 +107,16 @@
     .footer{
         background-size: 55%; 
     }
+    .contact-grp-img  {
+        .man-laptop{
+            max-width: 55%;
+            margin-bottom: 20px;
+        }
+        .keyboard-img{
+            max-width: 60%;
+        }
+     
+    }
   }
 
   @include respond-max(medium) {
@@ -125,6 +135,7 @@
         }
     }
   }
+
 
 
   
