@@ -1778,7 +1778,7 @@ p.bullets::before {
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease;
 }
-.team-member h4 {
+.team-member h5, .team-member .title-name {
   font-size: 16px;
   font-weight: 600;
   margin: 10px 0 0;
