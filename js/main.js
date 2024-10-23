@@ -245,4 +245,9 @@ scrollToTopBtn.addEventListener("click", function() {
 // Home banner js end
 
 
- 
+//  copyright 
+
+const currentYear = new Date().getFullYear();
+  
+// Update the span with the current year
+document.getElementById('copyrights-year').textContent = currentYear;
